@@ -430,7 +430,7 @@ def test_converter_error_handling():
     )
 
     with pytest.raises(ConverterError) as exc_info:
-        output = converter.to_pydantic()
+        converter.to_pydantic()
 
     assert "Failed to convert text into a Pydantic model" in str(exc_info.value)
 
@@ -564,7 +564,7 @@ def test_converter_with_ambiguous_input():
     )
 
     with pytest.raises(ConverterError) as exc_info:
-        output = converter.to_pydantic()
+        converter.to_pydantic()
 
     assert "failed to convert text into a pydantic model" in str(exc_info.value).lower()
 
