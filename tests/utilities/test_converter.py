@@ -1,4 +1,5 @@
 import json
+from enum import Enum
 from typing import Dict, List, Optional
 from unittest.mock import MagicMock, Mock, patch
 
@@ -512,10 +513,6 @@ def test_converter_with_list_field():
 
     assert isinstance(output, ListModel)
     assert output.items == [1, 2, 3]
-
-
-# Tests for enums
-from enum import Enum
 
 
 def test_converter_with_enum():

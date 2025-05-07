@@ -11,7 +11,6 @@ import pytest
 
 from crewai.agent import Agent
 from crewai.agents import CacheHandler
-from crewai.agents.cache import CacheHandler
 from crewai.crew import Crew
 from crewai.crews.crew_output import CrewOutput
 from crewai.flow import Flow, start
